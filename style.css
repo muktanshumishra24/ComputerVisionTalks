@@ -1,6 +1,7 @@
 body {
   font-family: "Nanum Gothic", sans-serif;
   margin: 0;
+  
 }
 
 h1 {
@@ -93,7 +94,7 @@ textarea:focus {
 
 nav {
   height: 72px;
-  background: #171717;
+  background: #000;
   width: 100%;
   margin: 0;
   position: fixed;
@@ -275,8 +276,8 @@ section {
 .btn-readmore:hover {
   background: #3edbf0;
   text-decoration: none;
-  padding: 8px 64px 8px 24px;
-  color: white;
+  /* padding: 8px 64px 8px 24px; */
+  /* color: white; */
 }
 
 /* Footer */
@@ -294,7 +295,7 @@ footer a {
 
 footer #left-footer {
   flex: 1;
-  border-right: 1px solid #3edbf0;
+  border-right: 1px solid #fff;
   padding-left: 32px;
 }
 
@@ -429,6 +430,103 @@ footer #social-media-footer ul li:hover a .fa-twitter {
   padding:8px;
 }
 
+#blog-banner {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.2) url("img/blog-banner.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: overlay;
+  color: white;
+}
+#blog-heading{
+  font-size: 150px;
+  text-align: center;
+  color: #000;
+  font-weight: 900;
+ font-family: 'Oxygen', sans-serif;
+}
+#blog-banner h3 {
+  background: black;
+  border-radius: 8px;
+  padding: 0 24px;
+  font-size: 24px;
+  overflow: hidden;
+  border-right: .15em solid #3edbf0;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .05em;
+  animation: 
+    typing 6s steps(40, end),
+    blink-caret 1s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 38% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color:transparent; }
+}
+
+
+.card .about-card-description {
+  padding: 0 8px;
+  font-size: 25px;
+  text-align: left;
+}
+
+
+#about-banner {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.2) url("img/about-banner.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: overlay;
+  color: white;
+}
+#about-heading{
+  font-size: 150px;
+  text-align: center;
+  color: #000;
+  font-weight: 900;
+ font-family: 'Oxygen', sans-serif;
+}
+#about-banner h3 {
+  background: black;
+  border-radius: 8px;
+  padding: 0 24px;
+  font-size: 24px;
+  overflow: hidden;
+  border-right: .15em solid #3edbf0;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .05em;
+  animation: 
+    typing 6s steps(40, end),
+    blink-caret 1s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 15% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color:transparent; }
+}
 
 /* Media Queries */
 
